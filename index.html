@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator Js</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<div class="calculator-container">
+    <h1>Calculator Javascript</h1>
+    <div class="calculator">
+        <div class="display-calculator">
+            <input id="display-input" class="display-input" type="text" value="0" readonly>
+        </div>
+        <div class="row-operators">
+            <div class="operator" onclick="getValueNumbers('+')">+</div>
+            <div class="operator" onclick="getValueNumbers('-')">-</div>
+            <div class="operator" onclick="getValueNumbers('*')">*</div>
+            <div class="operator" onclick="getValueNumbers('/')">/</div>
+        </div>
+        <div class="row-main">
+            <div class="row-numbers">
+                <div class="number" onclick="getValueNumbers(7)">7</div>
+                <div class="number" onclick="getValueNumbers(8)">8</div>
+                <div class="number" onclick="getValueNumbers(9)">9</div>
+                <div class="number" onclick="getValueNumbers(4)">4</div>
+                <div class="number" onclick="getValueNumbers(5)">5</div>
+                <div class="number" onclick="getValueNumbers(6)">6</div>
+                <div class="number" onclick="getValueNumbers(1)">1</div>
+                <div class="number" onclick="getValueNumbers(2)">2</div>
+                <div class="number" onclick="getValueNumbers(3)">3</div>
+                <div class="number" onclick="getValueNumbers(0)">0</div>
+                <div class="number" onclick="getValueNumbers('.')">.</div>
+                <div class="number" onclick="deleteNumber()">DEL</div>
+            </div>
+            <div class="row-equal">
+                <div class="equal" onclick="calculate()">=</div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./js/calculator.js"></script>
+</body>
+</html>
