@@ -102,10 +102,15 @@ h1 {
 
 .equal {
     color: #fff;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 .row-numbers {
-    width: calc(350px - 87.5px);
+    width: calc(350px - 88px);
     float: left;
     display: flex;
     flex-wrap: wrap;
